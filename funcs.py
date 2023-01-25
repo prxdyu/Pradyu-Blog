@@ -38,12 +38,13 @@ def send_email(name, email, phone, message,):
         connection.sendmail(my_mail, my_mail, email_message)
 
 def get_time():
-    time=dt.datetime.utcnow() + dt.timedelta(hours=5, minutes=30).hour
-    if time>5 and time<12:
+    time=dt.datetime.utcnow() + dt.timedelta(hours=5, minutes=30)
+    hours=time.hour
+    if hours>5 and hours<12:
         return "Good Morning"
-    elif time>12 and time<4:
+    elif hours>12 and hours<4:
         return "Good Afternoon"
-    elif time>4 and time<7:
+    elif hours>4 and hours<7:
         return "Good Evening"
     else:
         return "Good Night"
