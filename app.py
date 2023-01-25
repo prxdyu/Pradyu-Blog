@@ -18,10 +18,9 @@ from funcs import *
 user_info={}
 flag=True
 generated_otp=""
-
 app = Flask(__name__)
-app.config['SECRET_KEY'] =  os.environ.get("SECRET_KEY")
-ckeditor = CKEditor(app)
+app.config['SECRET_KEY'] =  os.environ.get('SECRET_KEY')
+ockeditor = CKEditor(app)
 Bootstrap(app)
 loginmanager=LoginManager()
 loginmanager.init_app(app)
