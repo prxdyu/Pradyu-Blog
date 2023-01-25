@@ -20,7 +20,11 @@ flag=True
 generated_otp=""
 app = Flask(__name__)
 app.config['SECRET_KEY'] =  os.getenv('SECRET_KEY')
+<<<<<<< HEAD
 ockeditor = CKEditor(app)
+=======
+ckeditor = CKEditor(app)
+>>>>>>> 0b60078d6301fa0b1709531c3f2b4f2ac10d199e
 Bootstrap(app)
 loginmanager=LoginManager()
 loginmanager.init_app(app)
