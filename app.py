@@ -16,6 +16,7 @@ from funcs import *
 
 # defining an empty dict to store user info and pass it to the otp_authentication function
 user_info={}
+time_of_day=get_time()
 flag=True
 generated_otp=""
 app = Flask(__name__)
