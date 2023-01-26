@@ -42,9 +42,9 @@ def get_time():
     hours=time.hour
     if hours>5 and hours<12:
         return "Good Morning"
-    elif hours>12 and hours<4:
+    elif hours>12 and hours<16:
         return "Good Afternoon"
-    elif hours>4 and hours<7:
+    elif hours>16 and hours<19:
         return "Good Evening"
     else:
         return "Good Night"
