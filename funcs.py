@@ -6,6 +6,7 @@ import datetime as dt
 
 my_mail = "pradyublog@gmail.com"
 my_password = "guwafcljmrgtpymu"
+reciever_mail='pradyu1742@gmail.com'
 # sivajivaailajelabi
 
 #function for generating random otp
@@ -35,7 +36,7 @@ def send_email(name, email, phone, message,):
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
         connection.login(my_mail,my_password)
-        connection.sendmail(my_mail, my_mail, email_message)
+        connection.sendmail(my_mail, reciever_mail, email_message)
 
 def get_time():
     time=dt.datetime.utcnow() + dt.timedelta(hours=5, minutes=30)
