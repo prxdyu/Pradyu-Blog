@@ -46,5 +46,5 @@ def get_time():
         return "Good Afternoon"
     elif hours>16 and hours<18:
         return "Good Evening"
-    elif hours>18 and hours<4
+    elif hours>18 and hours<4:
         return "Good Night"
