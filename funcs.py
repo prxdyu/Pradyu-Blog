@@ -40,11 +40,11 @@ def send_email(name, email, phone, message,):
 def get_time():
     time=dt.datetime.utcnow() + dt.timedelta(hours=5, minutes=30)
     hours=time.hour
-    if hours>5 and hours<12:
+    if hours>4 and hours<12:
         return "Good Morning"
     elif hours>12 and hours<16:
         return "Good Afternoon"
     elif hours>16 and hours<18:
         return "Good Evening"
-    else:
+    elif hours>18 and hours<4
         return "Good Night"
