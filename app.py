@@ -35,7 +35,7 @@ gravatar = Gravatar(app,
                     base_url=None)
 ##CONNECT TO DB
 app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {"pool_pre_ping": True}
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE2_URL")
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
