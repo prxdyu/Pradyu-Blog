@@ -86,7 +86,13 @@
 .sub-text {
     color:#aaa;
     font-family:verdana;
-    font-size:11px;
+    font-size: 44px;
+}
+
+.sub-text span{
+  color:#aaa;
+  font-family:verdana;
+  font-size: 44px;
 }
 .actionBox {
     border-top:1px dotted #bbb;

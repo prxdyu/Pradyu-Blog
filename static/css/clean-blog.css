@@ -143,16 +143,6 @@ img::-moz-selection {
     height:100%;
     float:left;
 }
-
-.dp{
-  width:30px;
-  margin-right:5px;
-  height:100%;
-  float:left;
-  width:100%;
-  border-radius:50%;
-}
-
 .commenterImage img {
     width:100%;
     border-radius:50%;
@@ -163,7 +153,7 @@ img::-moz-selection {
 .sub-text {
     color:#aaa;
     font-family:verdana;
-    font-size:11px;
+    font-size:44px;
 }
 .actionBox {
     border-top:1px dotted #bbb;
