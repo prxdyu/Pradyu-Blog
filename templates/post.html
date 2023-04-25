@@ -65,14 +65,20 @@
                     <ul class="commentList">
                       {% for comment in post.comments: %}
                         <li>
-                            <div class="commenter">
-                              <span style="text-align:center;"class="date sub-text">{{comment.commenter.name}}</span> &nbsp;
+                            <div class="commenter ">
+                              <img class ='commenterImage' style='width: 15%;
+border-radius: 50%;'src="{{ comment.commenter.email | gravatar }}">
+                              <span style="text-align:center; font-size:20px"class="date sub-text">{{comment.commenter.name}}</span> &nbsp;
+
                             </div>
                             <div class="commenterImage">
-                                 <img src="{{ comment.commenter.email | gravatar }}">
+
                             </div>
+
                             <div class="commentText">
                                 {{comment.text|safe}}
+                                 <br>
+                                 <br>
 
 
                             </div>
